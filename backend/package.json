@@ -1,0 +1,22 @@
+{
+  "name": "rev-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch backend/server.ts",
+    "start": "node dist/server.js",
+    "build": "tsc -p backend/tsconfig.json"
+  },
+  "dependencies": {
+    "@google/genai": "^0.2.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "ws": "^8.18.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "tsx": "^4.16.2",
+    "typescript": "^5.4.5"
+  }
+}
